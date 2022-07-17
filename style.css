@@ -1,0 +1,42 @@
+.toggle-switch{
+    margin-bottom: 5px;
+}
+.border{
+    position: relative;
+    background: #CCCCCC;
+    width: 100px;
+    height: 50px;
+    margin: 40vh auto;
+    display: block;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transition-duration: 0.4s;
+}
+.border::after{
+    position: absolute;
+    content: "";
+    background: #FFFFFF;
+    width: 40px;
+    height: 40px;
+    top: 5px;
+    left: 5px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition-duration: 0.4s;
+}
+
+.button:checked + .border{
+    background: #4BD865;
+}
+.button:checked + .border::after{
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+.button{
+    display: none;
+}
+
+.border:active::after{
+    width: 60%
+}
