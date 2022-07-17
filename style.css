@@ -1,12 +1,10 @@
-.toggle-switch{
-    margin: 40vh 50%;
-}
 .border{
     position: relative;
     background: #CCCCCC;
     width: 100px;
     height: 50px;
     display: block;
+    margin: 40vh auto;
     border-radius: 25px;
     cursor: pointer;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
